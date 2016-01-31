@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_tribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tribe"
+            />
+
+        <TextView
+            android:id="@+id/shequ"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/ic_tribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社区"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/shequ"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/ic_tribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动资讯、知识大搜罗"
+            style="@style/NormalText"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_bg" />
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_tuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tuan"
+            />
+
+        <TextView
+            android:id="@+id/yundong"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/ic_tuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动团"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/yundong"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/ic_tuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一个人运动太无聊？加入运动团,安全有趣不孤单"
+            style="@style/NormalText"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_bg" />
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_activities"
+            />
+
+        <TextView
+            android:id="@+id/huodong"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/icon_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/huodong"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/icon_activities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乐活福利惊喜拿,同城活动开心约"
+            style="@style/NormalText"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_bg" />
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_saishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_saishi"
+            />
+
+        <TextView
+            android:id="@+id/saishi"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/icon_saishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="官方赛事"
+            />
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_below="@+id/saishi"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@+id/icon_saishi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精彩赛事,尽在掌握"
+            style="@style/NormalText"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

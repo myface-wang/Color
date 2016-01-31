@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            layout="@layout/include_me_top"/>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/main"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="卡币0"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_setting"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="设置"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_toLeftOf="@+id/tv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="订单"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

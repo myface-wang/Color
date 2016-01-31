@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_bg" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical"
+        >
+
+        <com.diecolor.color.View.CircleImageView
+            android:id="@+id/img_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/headimage"
+            android:scaleType="centerCrop"
+            app:border_color="@color/white"
+            app:border_width="1dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/tv_name"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这里是名字"
+            />
+
+        <TextView
+            android:paddingLeft="5dp"
+            style="@style/SmallText"
+            android:layout_toRightOf="@id/img_head"
+            android:layout_below="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昨天"
+            />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:text="+ 关注"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/main"
+            android:background="@drawable/shape_btn"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/item_dy"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_dy"
+        android:layout_marginTop="10dp"
+        android:lines="3"
+        android:ellipsize="end"
+        />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# 官方赛事"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/shape"
+            />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# 我型我秀"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/shape"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_sc_feed_comment"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_bg"
+            />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:text="20"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_sc_praise_normal"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/default_bg"
+            />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:text="分享"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_sc_share"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_bg" />
+
+</LinearLayout>

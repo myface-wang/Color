@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white"
+    >
+
+    <com.diecolor.color.View.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/headimage"
+        android:scaleType="centerCrop"
+        app:border_color="@color/white"
+        app:border_width="1dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@+id/img_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小喇叭"
+        />
+
+    <TextView
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_head"
+        android:layout_below="@+id/tv_title"
+        android:text="app怎么玩？"
+        style="@style/NormalText"
+        />
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01-17"
+        android:layout_alignParentRight="true"
+        style="@style/SmallText"
+        />
+</RelativeLayout>
